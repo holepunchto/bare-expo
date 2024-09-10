@@ -25,7 +25,7 @@ export default function() {
     req.send('Hello from React Native!')
 
     req.reply('utf8').then((res: string) => setReponse(res))
-  })
+  }, [])
 
   return (
     <Text>{response}</Text>
