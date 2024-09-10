@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "name": "bare-expo",
+  "description": "Example of embedding Bare in an Expo application",
+  "main": "expo-router/entry",
+  "scripts": {
+    "android": "expo run:android",
+    "ios": "expo run:ios"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holepunchto/bare-expo.git"
+  },
+  "author": "Holepunch",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/holepunchto/bare-expo/issues"
+  },
+  "homepage": "https://github.com/holepunchto/bare-expo#readme",
+  "dependencies": {
+    "events": "^3.3.0",
+    "expo": "~51.0.28",
+    "expo-linking": "~6.3.1",
+    "expo-router": "~3.5.23",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "0.74.5",
+    "react-native-bare-kit": "^0.0.0",
+    "react-native-safe-area-context": "4.10.5"
+  },
+  "devDependencies": {
+    "@types/react": "~18.2.79",
+    "typescript": "~5.3.3"
+  }
+}
