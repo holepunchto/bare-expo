@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Text } from 'react-native'
 import { Worklet } from 'react-native-bare-kit'
+import bundle from "../app/app.bundle"
 
 export default function() {
   const [response, setReponse] = useState<string | null>(null)
@@ -8,15 +9,7 @@ export default function() {
   useEffect(() => {
     const worklet = new Worklet()
 
-    worklet.start('/app.js', `
-      const rpc = new BareKit.RPC((req) => {
-        if (req.command === 'ping') {
-          console.log(req.data.toString())
-
-          req.reply('Hello from Bare!')
-        }
-      })
-    `)
+    worklet.start('/app.bundle',bundle)
 
     const rpc = new worklet.RPC(() => { /* No reply */ })
 

@@ -9,6 +9,10 @@ Start by installing the dependencies:
 ```sh
 npm install
 ```
+Bundle the app:
+```
+ bare-dev bundle -o app/app.bundle.js backend/app.js
+```
 
 When finished, you can run the app on either iOS or Android.
 
