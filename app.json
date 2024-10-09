@@ -4,6 +4,7 @@
     "slug": "bare-expo",
     "version": "1.0.0",
     "orientation": "portrait",
+    "scheme": "to.holepunch.bare.expo",
     "icon": "./assets/images/icon.png",
     "userInterfaceStyle": "automatic",
     "splash": {
