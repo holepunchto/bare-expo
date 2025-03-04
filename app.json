@@ -32,6 +32,16 @@
             "minSdkVersion": 28
           }
         }
+      ],
+      [
+        "expo-bare-kit",
+        {
+          "ios": {
+            "notifications": {
+              "worklet": "push-notif.js"
+            }
+          }
+        }
       ]
     ]
   }
