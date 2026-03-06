@@ -37,7 +37,7 @@
   "devDependencies": {
     "@types/react": "~19.1.10",
     "prettier": "^3.3.3",
-    "prettier-config-standard": "^7.0.0",
+    "prettier-config-holepunch": "^2.0.0",
     "typescript": "^5.3.3"
   }
 }
