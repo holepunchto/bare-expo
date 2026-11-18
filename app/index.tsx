@@ -22,6 +22,10 @@ export default function () {
 
     IPC.on('data', (data: Uint8Array) => setResponse(b4a.toString(data)))
     IPC.write(b4a.from('Hello from React Native!'))
+
+    return () => {
+      worklet.terminate()
+    }
   }, [])
 
   return <Text>{response}</Text>
